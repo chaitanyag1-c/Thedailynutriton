@@ -10,6 +10,7 @@ import Hero from './Hero'
 import team from './Ourteam'
 import select from './Select'
 import Banner from './Banner'
+import '../slider.css'
 import Checkout from './Checkout'
 function App() {
   return (
