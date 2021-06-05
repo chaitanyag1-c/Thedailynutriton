@@ -1,9 +1,11 @@
 import React from 'react'
 import './css/select.css'
 import Header from './LOGGEDINHEADER'
+import Dashboard from './Dashboard'
 const Select = () => {
     return (
         <div id="login-cont">
+        <Dashboard />
         <Header />
         <div className="sheading" >
         <h2 className="align-text1">Select Meal According to your need</h2>

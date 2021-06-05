@@ -10,7 +10,7 @@ footer p {
     line-height: 28px;
 }
 .credits {
-  color:  var(--primary-color) !important;
+  color:  hotpink !important;
   animation: anime 1s ease-in infinite ;
   display: inline-block;
   /* border-radius: 15%; */
@@ -19,10 +19,12 @@ footer p {
   from{
     /* background: white; */
     transform: translateX(3px);
+  
   }
   to{
     /* background: black; */
     transform: scale(1.01) translateX(3px);
+
   }
 }
    .animate-border {

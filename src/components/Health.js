@@ -59,11 +59,11 @@ const Health = () => {
                 </div>
             </section>
             <section>
-                <div className="container1">
+                <div className="container1" >
                     <div className="pb-6 row">
                         <div className="text-center col">
-                            <h2 className="h1 mb-5">Get Started Today</h2><button type="button"
-                                className="rounded-pill btn1-responsive font-weight-bold btn1 btn1-primary" >Select Meals</button>
+                            <h2 className="h1 mb-5">Get Started Today</h2><button  type="button"
+                                className="rounded-pill btn1-responsive font-weight-bold btn1 btn1-primary"  >Select Meals</button>
                         </div>
                     </div>
                 </div>

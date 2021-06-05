@@ -3,7 +3,8 @@ import React from 'react'
 import './css/Footer.css'
 import logo from './navicon.png'
 import emailjs from 'emailjs-com';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
   function sendEmail(e) {
     e.preventDefault();
@@ -11,6 +12,16 @@ const Footer = () => {
     emailjs.sendForm('service_8o11so6', 'template_60f3jq9', e.target, 'user_L5WbOZGv8Ai94tr8CIHVj')
       .then((result) => {
           console.log(result.text);
+           
+          toast.success('🦄 We`ve sent an mail to your provided email address', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
       }, (error) => {
           console.log(error.text);
       });
@@ -137,10 +148,10 @@ const Footer = () => {
               </div>
               <p>{/* Don’t miss to subscribe to our new feeds, kindly fill the form below. */}
                Subscribe to our Newsletter . Stay connected with us.</p>
-              <form action={sendEmail}>
+              <form onSubmit={sendEmail}>
                 <div className="form-row">
                   <div className="col dk-footer-form">
-                    <input type="email" className="form-control" placeholder="Email Address" />
+                    <input type="email" name="email" className="form-control" placeholder="Email Address" />
                     <button type="submit">
                       <i className="fa fa-send" />
                     </button>
@@ -188,6 +199,17 @@ const Footer = () => {
   </div>
   </a>
   {/* End Back to top */}
+  <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
 </footer>
 
        
