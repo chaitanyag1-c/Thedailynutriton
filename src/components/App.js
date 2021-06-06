@@ -8,6 +8,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Hero from './Hero'
 import team from './Ourteam'
+import error from './Error'
 import select from './Select'
 import Banner from './Banner'
 import '../slider.css'
@@ -32,6 +33,8 @@ function App() {
               <Route path="/contact" component={contact} />
               <Route path="/banner" component={Banner} />
               <Route path="/forgot-password" component={ForgotPassword} />
+              <Route path="*" component={error} />
+              
             </Switch>
           </AuthProvider>
         </Router>

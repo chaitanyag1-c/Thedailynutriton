@@ -5,6 +5,9 @@ import { Link, useHistory } from "react-router-dom"
 import { Container } from "react-bootstrap"
 import Header from './Header'
 import './css/hero.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Signup() {
   const emailRef = useRef()
   const passwordRef = useRef()
@@ -17,8 +20,29 @@ export default function Signup() {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
+    if (passwordRef.current.value !== passwordConfirmRef.current.value) 
+    {
+      // return 
+      // setError("Passwords do not match")
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      toast.error('Password do not match',
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
     }
 
     try {
@@ -73,6 +97,9 @@ export default function Signup() {
       </Card>
       </Container>
       </Container>
+
+      <ToastContainer />
+      
     </>
   )
 }

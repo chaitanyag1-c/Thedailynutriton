@@ -3,13 +3,13 @@ import './css/Health.css'
 import h1 from './healthy-means1.png'
 import h2 from './healthy-means2.png'
 import h3 from './healthy-means3.png'
-
+import {Link} from 'react-router-dom'
 const Health = () => {
     return (
        <>
        <section>
                 <div className="container1">
-                    <div className="pb-5 row" data-aos="fade-in">
+                    <div className="pb-5 row" >
                         <div className="mx-auto col-md-7">
                             <h2 className="h1 mb-4 text-center">What Does <span className="highlight">Healthy</span><br />Even Mean?
         </h2>
@@ -62,8 +62,8 @@ const Health = () => {
                 <div className="container1" >
                     <div className="pb-6 row">
                         <div className="text-center col">
-                            <h2 className="h1 mb-5">Get Started Today</h2><button  type="button"
-                                className="rounded-pill btn1-responsive font-weight-bold btn1 btn1-primary"  >Select Meals</button>
+                            <h2 className="h1 mb-5">Get Started Today</h2><Link 
+                                className="rounded-pill btn1-responsive font-weight-bold btn1 btn1-primary" to="/select" >Select Meals</Link>
                         </div>
                     </div>
                 </div>

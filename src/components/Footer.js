@@ -38,9 +38,9 @@ const Footer = () => {
           <a href="index.html" className="footer-logo">
             <img src={logo} alt="footer_logo" className="img-fluid" />
           </a>
-          <p className="footer-info-text">
+          <p className="footer-info-text">At The Daily Nurtion, we understand that "healthy" actually means something different to everyone
           An investment in knowledge pays the best interest
-          We are determined to teach using the latest and enjoyable methods
+         
           </p>
           <div className="footer-social-link">
             <h3>Follow us</h3>
@@ -175,7 +175,7 @@ const Footer = () => {
     <div className="fcontainer">
       <div className="row">
         <div className="col-md-6">
-          <span>Copyright © 2019, All Right Reserved Creators Academy</span>
+          <span>Copyright © 2021, All Right Reserved The Daily Nutrition</span>
           <br/>
           <span>Design and Coded by <a href="https://www.linkedin.com/in/chaitanya-galande-96a491134/" className="credits"> Chaitanya Galande</a></span>
           
